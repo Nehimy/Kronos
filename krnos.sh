@@ -1,18 +1,22 @@
 #!/bin/bash
-Cronometro() {
+
+
+Cronometro () {
     Cyan="\e[1;36m"
-
-    for i in {1..3}
+    n=30
+    while [ $n -ge 0 ]
     do
-        echo -e $Cyan "$i\e[0m"
-        sleep 1s
+        clear
 
+        echo -e $Cyan "$n\e[0m"
+        n=$((n - 1))
+        sleep 1s
     done
 }
 
 Cronometro
 
 
-# o sea, la idea es tener un script que ejecuta xterm con la fuente cambiada y a su vez invoca otro script con tu contador, se entiende?
+# o sea, la idea es tener un script que ejecuta xterm con la fuen#te cambiada y a su vez invoca otro script con tu contador, se en#tiende?
 
-# xterm -fa "Monospace" -fs 14 -e /home/ney/Documentos/bash/krnos.sh
+# xterm -fa "Monospace" -fs 14 -e /home/ney/Documentos/bash/krnos#. sh
