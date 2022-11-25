@@ -83,11 +83,12 @@ ASCII_numbers () {
     do
         echo -e "${linea1[$i]}\t${linea2[$i]}"
     done
-
     #echo "${numbers[$1]}"
     #echo -n "${numbers[$1]}"
     #echo "${numbers[$@]}"
 }
+
+resize -s 6 6
 
 tiempo () {
     n=30
