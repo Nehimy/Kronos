@@ -71,14 +71,14 @@ ASCII_numbers () {
  9999 "
 
     )
-    echo $1
     a=$(($1/10))
     b=$(($1%10))
 
     IFS=$'\n' read -d '' -a  linea1 <<< "${numbers[$a]}"
 
     IFS=$'\n' read -d '' -a  linea2 <<< "${numbers[$b]}"
-
+    echo -e '\033[1;36m'
+    #Cyan="\e[1;36m"
     for i in {0..4}
     do
         echo -e "${linea1[$i]}\t${linea2[$i]}"
@@ -90,16 +90,12 @@ ASCII_numbers () {
 }
 
 tiempo () {
-    Cyan="\e[1;36m"
     n=30
     while [ $n -ge 0 ]
     do
+        #size terminal
         clear
         ASCII_numbers $n
-        #echo -e $Cyan "$n\e"
-        #resto
-        # ASCII_numbers $((n/10))
-        # ASCII_numbers $((n%10))
         n=$((n - 1))
         sleep 1s
     done
@@ -108,6 +104,9 @@ tiempo () {
 tiempo
 
 #ASCII_numbers 9
+
+
+#Test
 
 # o sea, la idea es tener un script que ejecuta xterm con la fuen#te cambiada y a su vez invoca otro script con tu contador, se en#tiende?
 
