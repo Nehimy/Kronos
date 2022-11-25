@@ -1,12 +1,12 @@
 #!/bin/bash
 
-dividir=$((30/10))
+# dividir=$((30/10))
 
-#resto
-a=$((30%10))
+# #resto
+# a=$((30%10))
 
-echo $dividir
-echo $a
+# echo $dividir
+# echo $a
 
 ASCII_numbers () {
     numbers=(
@@ -68,11 +68,25 @@ ASCII_numbers () {
 99  99
  99999
     99
- 9999"
+ 9999 "
 
     )
+    echo $1
+    a=$(($1/10))
+    b=$(($1%10))
 
-    echo "${numbers[$1]}"
+    IFS=$'\n' read -d '' -a  linea1 <<< "${numbers[$a]}"
+
+    IFS=$'\n' read -d '' -a  linea2 <<< "${numbers[$b]}"
+
+    for i in {0..4}
+    do
+        echo -e "${linea1[$i]}\t${linea2[$i]}"
+    done
+
+    #echo "${numbers[$1]}"
+    #echo -n "${numbers[$1]}"
+    #echo "${numbers[$@]}"
 }
 
 tiempo () {
@@ -81,17 +95,17 @@ tiempo () {
     while [ $n -ge 0 ]
     do
         clear
-
-        echo -e $Cyan "$n\e[0m"
-
-        #ASCII_numbers 3
-        #ASCII_numbers 0
+        ASCII_numbers $n
+        #echo -e $Cyan "$n\e"
+        #resto
+        # ASCII_numbers $((n/10))
+        # ASCII_numbers $((n%10))
         n=$((n - 1))
         sleep 1s
     done
 }
 
-#tiempo
+tiempo
 
 #ASCII_numbers 9
 
@@ -106,3 +120,40 @@ tiempo () {
 #number2 = 0
 # ¿Cómo lo obtengo?
 # dividiendo
+
+#  6666    8888
+# 66      88  88
+# 66666    8888
+# 66  66  88  88
+#  6666    8888
+
+# ¿Cómo sacar pedasos del string? (divir la cadena en pedasos)
+# ¿Coḿo obtener pedados de una cadena?
+# ¿Cómo contatenar en bash?
+
+
+# a=" 777777
+#      77
+#     77
+#    77
+#   77 "
+
+# b="44  44
+# 44  44
+# 444444
+#     44
+#     44"
+
+# IFS=$'\n' read -d '' -a  linea1 <<< "$a"
+
+# IFS=$'\n' read -d '' -a  linea2 <<< "$b"
+
+# for i in {0..4}
+# do
+#   echo -e "${linea1[$i]}\t${linea2[$i]}"
+# done
+
+# for i in "${linea1[@]}";
+# do
+#     echo "$i"
+# done
