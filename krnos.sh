@@ -157,3 +157,10 @@ tiempo
 # do
 #     echo "$i"
 # done
+
+
+# botón de kj en mi twitch
+# hacer readme del temporzador
+# grabar el temporizador funcionando
+
+# terminar el donut
