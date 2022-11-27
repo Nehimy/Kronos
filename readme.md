@@ -5,7 +5,7 @@ Es un pequeño script que consiste en un temporisador que va desde el 30 al 0.
 
 Krnos fue creado en bash script, ya que según yo si funciona desde la terminal de Linux es como ser hacker... obiamente no es así 🙃.
 
-[Krnos](https://i.imgur.com/RKXWTcR.png)
+![Krnos](https://i.imgur.com/RKXWTcR.png)
 
 
 ## Obejtivo de Krnos
