@@ -14,4 +14,4 @@ Fue creado para suarlo cuando canjeen puntos del canal (en el cual se supene que
 
 ## Vídeo
 
-![](https://vimeo.com/775747296)
+![](https://player.vimeo.com/video/775747296)
