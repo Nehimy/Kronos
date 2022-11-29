@@ -15,4 +15,4 @@ Fue creado para suarlo cuando canjeen puntos del canal (en el cual se supene que
 ## Gif
 
 
-![]({https://i.imgur.com/LbshRbJ.gif})
+![Git Kronos](https://i.imgur.com/LbshRbJ.gif)
