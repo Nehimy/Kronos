@@ -16,4 +16,4 @@ Fue creado para suarlo cuando canjeen puntos del canal (en el cual se supene que
 
 [![Alternate Text]({image-url})]({video-url} "Link Title")
 
-[![videodekrnos]({https://i.imgur.com/sya7KJa.png})]({https://youtu.be/JxbOf5RjmRk} "krnos")
+[![]({https://i.imgur.com/sya7KJa.png})]({https://youtu.be/JxbOf5RjmRk} "krnos")
