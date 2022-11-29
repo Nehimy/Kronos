@@ -15,3 +15,5 @@ Fue creado para suarlo cuando canjeen puntos del canal (en el cual se supene que
 ## Vídeo
 
 ![](https://youtu.be/JxbOf5RjmRk)
+
+[![videodekrnos]({https://i.imgur.com/sya7KJa.png})]({https://youtu.be/JxbOf5RjmRk} "krnos")
