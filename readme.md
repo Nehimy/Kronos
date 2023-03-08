@@ -14,4 +14,4 @@ Fue creado para usarlo cuando canjeen puntos del canal (en el cual se supene que
 
 ## Gif
 
-![Git Kronos](https://i.imgur.com/LbshRbJ.gif)
+![Git Kronos](https://imgur.com/gEoOmeF.gif)
